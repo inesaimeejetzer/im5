@@ -9,6 +9,8 @@
 
 add_filter('init', function () {
     register_nav_menus([
+      'main' => 'hauptnavigation' ,
+      'legals' => 'rechtliches' 
         // todo: Menus hier registrieren
     ]);
 });

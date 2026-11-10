@@ -20,10 +20,55 @@
     position: sticky;
     top: 0;
     z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        height: 40px;
+        width: auto;
+    }
+    .nav-container {
+        .nav {
+            list-style: none;
+            display: flex; 
+            flex-direction: row;
+            justify-content: flex-end;
+            align-self: center;
+            gap: 20px;
+            a {
+                text-decoration: none;
+                color: var(--color-white);
+            }
+        }
+    }
 }
 [data-layout="footer"] {
     padding: var(--gap-around);
     background-color: var(--color-accent);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        height: 40px;
+        width: auto;
+    }
+    .nav-container {
+        margin-left: auto;
+        .nav {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-self: center;
+            gap: 20px;
+            a {
+                text-decoration: none;
+                color: var(--color-white);
+            }
+        }
+    }
 }
 
 /* Styling of all available page components. */
